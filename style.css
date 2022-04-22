@@ -1,0 +1,231 @@
+
+@font-face {
+    font-family: 'Destroy';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Destroy'), url('DESTROY_.woff') format('woff');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Destroy;
+    transition: all ease-out 0.5s;
+}
+
+
+
+html{
+    scroll-behavior: smooth;
+    background-color:#E5E3C9;
+}
+
+:root{
+    --blue: #24a693;
+}
+/***** Navbar Section Starts ******/
+
+
+a{
+   color: aliceblue;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+
+/***** Home Section Starts ******/
+
+.home{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 80px 50px;
+}
+
+h1{
+    font-size: 60px;
+    color: var(--blue);
+}
+p{
+    font-size: 18px;
+    line-height: 1.5;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.btn,
+.left .btn{
+    background-color: var(--blue);
+    display: flex;
+    justify-content: center;
+    width: 7vw;
+    padding: 15px 30px;
+    font-size: 19px;
+    color: white;
+    border-radius: 20px;
+    
+}
+.btn:hover{
+    background-color: #303f9f;
+}
+.left{
+    padding-top: 50PX;
+}
+.portfolio-image{
+    width: 70%;
+}
+.img{
+    display: flex;
+    justify-content: center;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+@media only screen and (max-width: 800px) {
+    .home {
+        display: flex;
+        flex-direction: column;
+        line-height: 2;
+        padding: 50px;
+        padding-top: 10px;
+    }
+    .home .img{
+        margin-top: 20px;
+        width: 100%;
+    }
+}
+
+/* Skills section starts */
+.skills{
+    padding: 50px;
+    text-align: center;
+}
+h1{
+    font-size: 40px;
+    
+}
+.posts{
+    display: grid;
+    grid-template-columns: repeat(1,2fr);
+    margin-top: 50px;
+    column-gap: 30px;
+    row-gap: 20PX;
+}
+.post{
+    display: flex;
+    text-align: left;
+    line-height: 1;
+    cursor: pointer;
+    background-color: #faf9ff;
+}
+.post:hover{
+    filter: brightness(90%);
+}
+.post p{
+    font-size: 16px;
+    margin: 0;
+}
+.post h2{
+    font-size: 25px;
+}
+.pic{
+    width:  25%;
+}
+.detail{
+    margin-left: 20px;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .posts{
+    grid-template-columns: repeat(1,1fr);
+
+    }
+}
+
+
+/***** Contact and about Section Starts ******/
+
+.contact{
+    padding: 50px;
+}
+.contact .title{
+    text-align: center;
+}
+.contact_form{
+    display: flex;
+    justify-content: end;
+    margin-right: auto;
+}
+.formbox{
+    width: 50vw;
+}
+.work{
+    padding: 1vh 10vw;
+}
+.work_header{
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+}
+.social-icons{
+    display: flex;
+    justify-content: center;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    font-size: 2rem;
+    padding: 1vh 1vw;
+    flex-direction: column;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+input{
+    width: 40vw;
+    padding: 10px;
+    margin-bottom: 10px;
+    outline-color: #303f9f;
+}
+textarea{
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 40vw;
+    outline-color: #303f9f;
+    height: 200px;
+    resize: none;
+}
+
+@media only screen and (max-width: 1000px) {
+    form{
+        padding: 0 20px;
+    }
+}
+
+
+/***** Footer Section Starts ******/
+
+footer{
+    margin: 0 50px;
+}
+footer nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 2;
+}
+
+.copy{
+    text-align: center;
+    margin: 20px;
+}
+.alast{
+    color: black;
+}
